@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alisa Rohalska Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Authentic portrait and lifestyle photography by Alisa Rohalska." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f6;
+      color: #111;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(246,246,246,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+
+    section { margin-bottom: 3rem; }
+
+    /* Hero (Home) */
+    #home {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .hero-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+    .hero-title {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 520px;
+      opacity: 0.9;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .btn-primary, .btn-secondary {
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      border: 1px solid #111;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: transparent;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .btn-primary {
+      background: #111;
+      color: #f6f6f6;
+    }
+    .btn-primary:hover {
+      background: #333;
+    }
+    .btn-secondary:hover {
+      background: #111;
+      color: #f6f6f6;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .section-text {
+      max-width: 640px;
+      font-size: 0.98rem;
+      opacity: 0.95;
+    }
+
+    /* Portfolio grid (placeholder) */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+  .ph-card {
+  background: #e5e5e5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.ph-card figcaption {
+  padding: 0.6rem 0.8rem
+
+    }
+
+    /* Contact */
+    .contact-list {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .contact-list li {
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .link-accent {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 1rem 1.5rem 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero-title { font-size: 2rem; }
+      .nav { padding-inline: 1rem; }
+      main { padding-inline: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">ALISA ROHALSKA PHOTOGRAPHY</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="hero-eyebrow">Portrait & lifestyle photography</div>
+      <h1 class="hero-title">Capturing your unique story, unfiltered and authentic.</h1>
+      <p class="hero-subtitle">
+        Photography, for me, is not about chasing perfect faces or heavy retouching. 
+        It is about your individuality, your quiet moments, and the beauty that feels like you – honest, imperfect, unforgettable.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-primary">View portfolio</a>
+        <a href="#contact" class="btn-secondary">Book a session</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
+      <p class="section-text">
+        I am Alisa Rohalska, a Switzerland-based photographer with Ukrainian roots and a lifelong love for capturing real moments. 
+        My journey started with film cameras, continued through everyday smartphone storytelling, and today lives in digital photography focused on emotion over perfection.
+      </p>
+      <br />
+      <p class="section-text">
+        In a world full of filters and AI-generated images, I choose authenticity: natural textures, gentle color grading in Lightroom, 
+        and portraits that preserve who you are instead of turning you into someone else. 
+        Life is too short to hide your true self – my work is about celebrating your personality and unique presence.
+      </p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p class="section-text">
+        This portfolio is growing together with me. Here you will find a small selection of portraits and everyday scenes that tell honest, human stories.
+        More work is coming soon.
+      </p>
+      <br />
+    <div class="grid">
+  <figure class="ph-card">
+    <img src="images/1.jpg" alt="Exploration of accepting your body and femininity." />
+    <figcaption>An exploration of accepting your body and femininity – a quiet yet confident look at yourself without apology.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/2.jpg" alt="Silent fatigue and overloaded thoughts." />
+    <figcaption>A frame about silent fatigue and overloaded thoughts, where the pose becomes a muted scream only you can hear.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/3.jpg" alt="Sensuality as a form of strength." />
+    <figcaption>Sensuality as a form of strength: the body turns into art, with hidden pain and doubt shimmering underneath.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/4.jpg" alt="Emotional chaos through movement and light." />
+    <figcaption>A visual metaphor for emotional chaos: the movement of body and light shows how vulnerability can look powerful.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/5.jpg" alt="Inner resilience on a lonely path." />
+    <figcaption>A journey about inner resilience: a calm presence on a lonely path, walking your own way without losing dignity.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/6.jpg" alt="Golden silence in the city." />
+    <figcaption>A city wrapped in golden silence before the storm – a soft melancholy of streets that feel like home.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/7.jpg" alt="Homey warmth and trust with a small friend." />
+    <figcaption>A tender moment of homey warmth and trust, where a little friend fills the whole frame and the whole heart.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/8.jpg" alt="Joy of movement and childhood freedom." />
+    <figcaption>Pure joy of movement and childhood freedom running towards the sun, still untouched by the fears of the adult world.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/9.jpg" alt="Gentle autumn light at the lakeshore." />
+    <figcaption>A frame about gentle autumn light, turning an ordinary lakeshore into a soft, dreamlike memory you want to linger in.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/10.jpg" alt="Limitless sky and a brave choice." />
+    <figcaption>The feeling of limitless sky and a single brave choice – a small silhouette floating above mountains and doubts.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/11.jpg" alt="Secret lookout carved in rock." />
+    <figcaption>A secret lookout carved in rock, as if the landscape were a hidden postcard only you were meant to discover.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/12.jpg" alt="Swiss altitude and blue distance." />
+    <figcaption>A quiet celebration of Swiss altitude and space – where distance softens into blue layers and freedom feels almost touchable.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/13.jpg" alt="Body as living sculpture." />
+    <figcaption>Here the body is less about seduction and more about sculpture: a living artwork of curves, shadows, and gentle strength.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/14.jpg" alt="Real female body, soft lines and grace." />
+    <figcaption>A quiet ode to the real female body – soft lines, small imperfections, and all the grace of being unfinished yet utterly complete.</figcaption>
+  </figure>
+
+  <figure class="ph-card">
+    <img src="images/15.jpg" alt="Portrait of self-acceptance and femininity." />
+    <figcaption>A portrait of self-acceptance, where femininity is not performed but simply exists – vulnerable, elegant, and unapologetically human.</figcaption>
+  </figure>
+</div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="section-text">
+        Ready to create something together or curious about a custom project? 
+        Reach out and let's talk about your vision.
+      </p>
+      <ul class="contact-list">
+        <li>Email: <a class="link-accent" href="mailto:alisarohalska@gmail.com">alisarohalska@gmail.com</a></li>
+        <li>Instagram: 
+          <a class="link-accent" href="https://www.instagram.com/roy_lis" target="_blank" rel="noopener noreferrer">
+            @roy_lis
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alisa Rohalska Photography · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
